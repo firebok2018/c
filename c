@@ -13,6 +13,9 @@ private void btnEncritpar_Click(object sender, EventArgs e)
                 txtEncript.Text += bt.ToString();
             }
         }
+          DESCryptoServiceProvider servicio = new DESCryptoServiceProvider();
+        byte[] key = new byte[] { 70, 71, 72, 73, 74, 75, 76, 77 };
+        byte[] iv = new byte[] { 60, 61, 62, 63, 64, 65, 66, 67 };
 private void btnEncriptat_Click(object sender, EventArgs e)
         {
             SaveFileDialog sv = new SaveFileDialog();
